@@ -21,8 +21,8 @@ const payment = asyncHandler(async (req, res) => {
     const session = await stripe.checkout.sessions.create({
       line_items: [{ price: price.id, quantity: 1 }],
       mode: "payment",
-      success_url: "https://jepair-bazaar-v5at.vercel.app/success",
-      cancel_url: "https://jepair-bazaar-v5at.vercel.app/cancel",
+      success_url: "https://jepair-bazaar-v5at.vercel.app/",
+      cancel_url: "https://jepair-bazaar-v5at.vercel.app/",
       customer_email: "repairbazaar@gmail.com",
     });
     res.json({ url: session.url });
