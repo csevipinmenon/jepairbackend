@@ -59,7 +59,7 @@ app.use("/jepairbazaar/payment", paymentRouter);
 app.use("/jepairbazaar/order", orderRoutes);
 app.use("/jepairbazaar/users", getAllUsersRoutes);
 
-app.post("/vipin", (req, res) => {
+app.get("/vipin", (req, res) => {
   res.send("hello");
 });
 
