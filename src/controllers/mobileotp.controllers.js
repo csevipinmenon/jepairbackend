@@ -1,6 +1,7 @@
 import { asyncHandler } from "../utils/asyncHandler.js";
 import twilio from "twilio";
 import { bookEmail } from "../middlewares/emailMsg.js";
+import 'dotenv/config';
 
 const accountSid = process.env.ACCOUNT_SID;
 const authToken = process.env.AUTH_TOKEN;

@@ -1,5 +1,6 @@
 import Stripe from "stripe";
 import { asyncHandler } from "../utils/asyncHandler.js";
+import 'dotenv/config';
 
 const stripe = new Stripe(
   process.env.STRIPE
