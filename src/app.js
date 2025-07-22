@@ -4,8 +4,8 @@ import cookieParser from "cookie-parser";
 import logger from "./logger.js";
 import morgan from "morgan";
 import bodyParser from "body-parser";
-import http from "http";
-import { Server } from "socket.io";
+
+import 'dotenv/config';
 
 const app = express();
 
@@ -29,7 +29,7 @@ app.use(
 
 app.use(
   cors({
-    origin: "https://jepair-bazaar-v5at.vercel.app/",
+    origin: process.env.CORS_ORIGIN,
     credentials: true,
   })
 );
