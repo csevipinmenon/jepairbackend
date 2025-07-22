@@ -1,0 +1,39 @@
+{
+  "name": "jepairbazaar",
+  "version": "1.0.0",
+  "description": "india largest home service provider",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [
+    "home",
+    "service",
+    "repair",
+    "plumber",
+    "bazaar",
+    "repair bazaar"
+  ],
+  "author": "vipin kumar",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^17.0.0",
+    "express": "^5.1.0",
+    "joi": "^17.13.3",
+    "mongoose": "^8.16.1",
+    "morgan": "^1.10.0",
+    "nodemailer": "^7.0.3",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.2",
+    "socket.io": "^4.8.1",
+    "stripe": "^18.2.1",
+    "twilio": "^5.7.1",
+    "winston": "^3.17.0"
+  }
+}
