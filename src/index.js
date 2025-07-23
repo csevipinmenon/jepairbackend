@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 3000;
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "https://jepair-bazaar-v5at.vercel.app/",
+    origin: "https://jepair-bazaar-v5at.vercel.app",
     methods: ["GET", "POST"],
     credentials: true,
   },
